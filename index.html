@@ -1,1 +1,39 @@
-<p>Oui</p>
+<!DOCTYPE html>
+<html lang="fr">
+  <header>
+    <style>
+      body {
+        text-align: center;
+        padding-top: 100px;
+      }
+    </style>
+  </header>
+  <body>
+    <h2 id="response"><font size="5">Oui</font></h2>
+    <p><font size="1">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</font></p>
+  </body>
+  <script>
+    const date = new Date();
+
+    const openHours = {
+      0: [[0, 60], [960, 1440]],
+      1:	[[0, 60], [870, 1440]],// 14: 30–01:00
+      2: [[0, 60], [870, 1440]],	//14: 30–01:00
+      3: [[0, 60], [870, 1440]],	//14: 30–01:00
+      4: [[0, 60], [870, 1440]],	//14: 30–01:00
+      5: [[0, 60], [870, 1440]],	//14: 30–01:00
+      6: [[0, 60], [840, 1440]],	//14:00–01:00
+    }
+
+    const dateOfTheWeek = date.getDay();
+
+    const time = date.getHours() * 60 + date.getMinutes();
+    const text = document.getElementById('response');
+
+    if (openHours[dateOfTheWeek].some(range => time >= range[0] && time <= range[1])) {
+      text.textContent = 'Oui';
+    } else {
+      text.textContent = 'Non';
+    }
+  </script>
+</html>
