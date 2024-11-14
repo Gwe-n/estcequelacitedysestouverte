@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+      body {
+          text-align: center;
+          padding-top: 100px;
+          margin: auto;
+          color: #000000;
+          font-family: "Comic Neue", cursive;
+          text-align: center;
+      }
 
-<head>
-  <style>
-    body {
-      text-align: center;
-      padding-top: 100px;
-    }
+      .pouet {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
 
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
-</head>
+      img {
+          max-width: 100%;
+          height: auto;
+      }
 
-<body>
-  <h1 id="response">
-    <font size="5">Oui</font>
-  </h1>
-  <img src="https://raw.githubusercontent.com/jadeen/estcequelacitedysestouverte/main/images/1630417845183.jpg"
-    alt="Harpe Noire" />
-  <p>
-    <font size="1">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</font>
-  </p>
-</body>
-<script>
+      h1 {
+          font-size: 3em;
+          font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pouet">
+      <h1 id="response">Oui</h1>
+      <img src="https://raw.githubusercontent.com/jadeen/estcequelacitedysestouverte/refs/heads/main/images/1630417845183.jpeg" alt="Harpe Noire" />
+      <p>L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
+    </div>
+  </body>
+  <script>
   const date = new Date();
 
   https://github.com.git
