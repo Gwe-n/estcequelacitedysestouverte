@@ -31,6 +31,14 @@
           font-size: 3em;
           font-weight: bold;
       }
+
+      /* CSS to limit image size */
+      #picture {
+        max-width: 500px; /* Limits the image width */
+        max-height: 500px; /* Limits the image height */
+        width: auto; /* Maintains aspect ratio */
+        height: auto; /* Maintains aspect ratio */
+      }
     </style>
   </head>
   <body>
@@ -40,16 +48,6 @@
       <p>L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
     </div>
   </body>
-
-  <style>
-    /* CSS to limit image size */
-    #picture {
-      max-width: 500px; /* Limits the image width */
-      max-height: 500px; /* Limits the image height */
-      width: auto; /* Maintains aspect ratio */
-      height: auto; /* Maintains aspect ratio */
-    }
-  </style>
 
   <script>
   const date = new Date();
