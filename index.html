@@ -57,7 +57,7 @@
 
   const time = date.getHours() * 60 + date.getMinutes();
   const text = document.getElementById('response');
-  const img = document.querySelector('img')
+  const img = document.querySelector('img');
 
   if (openHours[dateOfTheWeek].some(range => time >= range[0] && time <= range[1])) {
     text.textContent = 'Oui';
